@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtensiÃ³n - CERSEU FCM | UNMSM</title>
+    <meta name="description" content="ExtensiÃ³n - CERSEU FCM | UNMSM">
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/logo/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+
+<body class="bg-gray-50" data-page="extension">
+
+    <div id="header-container"></div>
+
+    <main class="main-content">
+
+        <section class="page-header" id="presentacion"
+            style="background-image: linear-gradient(to right, var(--color-primary-900) 0%, rgba(4, 18, 36, 0.8) 100%), url('../../assets/images/hero/facultad.png');">
+
+            <div class="container">
+                <span class="badge">CERSEU</span>
+
+                <h1 class="hero-title">Extensión Universitaria</h1>
+
+                <p class="hero-description">
+                    La extensión universitaria conecta la universidad con la sociedad mediante programas de
+                    capacitación, servicios académicos y proyectos orientados al desarrollo social. <br><br>
+
+                    Desde el Centro de Responsabilidad Social y Extensión Universitaria (CERSEU) promovemos actividades
+                    que fortalecen las capacidades de las personas y contribuyen a resolver problemas sociales,
+                    laborales y productivos.
+                </p>
+            </div>
+        </section>
+
+        <section class="admission-steps section-padding bg-white">
+            <div class="container">
+
+                <div class="section-header text-center">
+                    <div class="section-subtitle">Tu camino al éxito</div>
+                    <h2 class="section-title">¿Cómo participar en nuestros programas?</h2>
+                    <p class="section-description">Un proceso simple para acceder a cursos, capacitaciones y actividades
+                        de extensión universitaria del CERSEU de la Facultad de Ciencias Matemáticas de la UNMSM.</p>
+                </div>
+
+                <div class="steps-grid">
+
+                    <div class="step-card fade-in-up">
+                        <div class="step-number">01</div>
+                        <h3>Explora nuestros programas</h3>
+                        <p>Revisa la oferta de cursos y/o actividades disponibles y elige el programa que deseas llevar.
+                        </p>
+                    </div>
+
+                    <div class="step-card fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="step-number">02</div>
+                        <h3>Realiza tu pago</h3>
+                        <p>Efectúa el pago correspondiente a través de la plataforma San Market, utilizando los medios
+                            habilitados por la universidad.</p>
+                    </div>
+
+                    <div class="step-card fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="step-number">03</div>
+                        <h3>Registra tu boleta de pago</h3>
+                        <p>Completa el formulario que te proporcionará el asesor del programa y adjunta tu boleta de
+                            pago para confirmar tu inscripción.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="academic-calendar section-padding bg-surface" id="calendario">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-subtitle">Planificación</div>
+                    <h2 class="section-title">Calendario de Actividades</h2>
+                </div>
+
+                <div class="calendar-wrapper">
+                    <table class="board-table">
+
+                        <thead>
+                            <tr>
+                                <th>Programa</th>
+                                <th>Cierre de Inscripciones</th>
+                                <th>Inicio de Clases</th>
+                                <th>Modalidad</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="calendar-container">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section section-padding bg-white">
+            <div class="container" style="max-width: 800px;">
+
+                <div class="section-header text-center">
+                    <div class="section-subtitle">Soporte al Estudiante</div>
+                    <h2 class="section-title">Preguntas Frecuentes</h2>
+                </div>
+
+                <div class="accordion" id="faq-container">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="../../assets/js/main.js"></script>
+</body>
+
+</html>
+

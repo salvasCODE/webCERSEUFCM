@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>CERSEU FCM | UNMSM</title>
+
+
+    <meta name="description"
+        content="Web oficial del Centro de Responsabilidad Social y Extensión Universitaria de la Facultad de Ciencias Matemáticas de la Universidad Nacional Mayor de San Marcos.">
+
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body data-page="home">
+
+
+    <div id="header-container"></div>
+
+
+    <main class="main-content">
+
+
+
+        <section class="hero">
+
+            <div class="hero-bg-elements"
+                style="background-image: url('assets/images/hero/facultad.png');">
+            </div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="badge fade-in-up">Facultad de Ciencias Matemáticas</span>
+
+
+                    <h1 class="hero-title fade-in-up" style="animation-delay: 0.1s;">
+                        Extensión, <span class="text-gradient">ciencia y compromiso</span> para transformar la
+                        sociedad
+                    </h1>
+
+
+                    <p class="hero-description fade-in-up"
+                        style="animation-delay: 0.2s; max-width: 800px; margin: 0 auto 2rem auto; font-size: 1.25rem;">
+                        Impulsamos programas, actividades y proyectos que integran el conocimiento matemático con la
+                        responsabilidad social, la formación continua y el servicio a la comunidad.
+                    </p>
+
+
+                    <div class="hero-buttons fade-in-up" style="animation-delay: 0.3s;">
+
+                        <a href="#programas" class="btn btn-primary btn-lg">Explorar Programas</a>
+
+
+                        <a href="https://wa.me/51910430894" class="btn btn-secondary btn-lg">
+                            <i class="ph ph-chat-circle-dots"></i> Solicitar Asesoría
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="hero-visual fade-in" style="animation-delay: 0.5s;">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="highlights-section section-padding" id="destacados"
+            style="background-color: var(--color-surface-50);">
+            <div class="container">
+
+                <div class="section-header text-center">
+                    <div class="section-subtitle">Actualidad</div>
+                    <h2 class="section-title">Noticias y Eventos Recientes</h2>
+                </div>
+
+
+
+                <div class="swiper highlights-swiper fade-in-up">
+
+                    <div class="swiper-wrapper" id="home-news-wrapper">
+
+                    </div>
+
+
+                    <div class="swiper-pagination"></div>
+
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="impact-dashboard section-padding">
+            <div class="container">
+
+                <div class="section-header text-center">
+                    <div class="section-subtitle">Estadísticas</div>
+                    <h2 class="section-title">Ciencias Matemáticas al servicio de la sociedad</h2>
+                    <p class="section-description mx-auto" style="margin-left: auto; margin-right: auto;">
+                        Nuestras acciones reflejan el compromiso de la Facultad de Ciencias Matemáticas con la
+                        Responsabilidad Social Universitaria.
+                    </p>
+                </div>
+
+
+                <div class="impact-grid" id="impact-container">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="programs section-padding" id="programas">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-subtitle">Oferta Académica</div>
+                    <h2 class="section-title">Programas</h2>
+                    <p class="section-description">
+                        Actividades formativas que responden a las necesidades actuales de aprendizaje y desarrollo en
+                        la comunidad.
+                    </p>
+                </div>
+
+
+                <div class="advanced-filter-bar fade-in-up">
+
+                    <div class="search-input-wrapper">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" id="course-search" placeholder="Buscar cursos, talleres..."
+                            class="filter-search-input">
+                    </div>
+
+
+                    <div class="filter-dropdowns">
+
+                        <select class="filter-select" id="type-filter">
+                            <option value="all">Todos los programas</option>
+                            <option value="capacitacion">Capacitaciones</option>
+                            <option value="curso">Cursos</option>
+                            <option value="taller">Talleres</option>
+                            <option value="reforzamiento">Reforzamiento</option>
+                        </select>
+                        
+
+
+                        <select class="filter-select" id="modality-filter">
+                            <option value="all">Todas las modalidades</option>
+                            <option value="virtual">Virtual</option>
+                            <option value="semipresencial">Semipresencial</option>
+                            <option value="presencial">Presencial</option>
+                        </select>
+
+
+                        <button class="btn btn-primary" id="btn-apply-filters">Filtrar</button>
+                    </div>
+                </div>
+
+
+                <div class="programs-grid" id="programs-home-container">
+
+                </div>
+
+
+                <div class="view-all-wrapper">
+                    <a href="public/pages/programs.html" class="btn btn-outline btn-lg">Ver todos los programas</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="institutional section-padding" id="nosotros">
+            <div class="container inst-container">
+
+
+                <div class="inst-image-grid">
+
+                    <div class="inst-img img-1"
+                        style="background-image: url('assets/images/gallery/eventoDuberlee.jpeg');">
+                    </div>
+
+
+                    <div class="inst-img img-2"
+                        style="background-image: url('assets/images/gallery/comiteCERSEU.jpeg');">
+                    </div>
+                </div>
+
+
+                <div class="inst-content">
+                    <div class="section-subtitle">Respaldo Institucional</div>
+                    <h2 class="section-title">El poder de la tradición y las ciencias exactas</h2>
+                    <p class="inst-text">
+                        El Centro de Responsabilidad Social y Extensión Universitaria (CERSEU) de la
+                        Facultad de Ciencias Matemáticas desarrolla sus actividades con el respaldo
+                        institucional del Decanato de la Facultad de Ciencias Matemáticas de la
+                        Universidad Nacional Mayor de San Marcos.
+
+                        Nuestros programas académicos, proyectos de extensión y actividades de formación
+                        continua se diseñan bajo los principios de rigor científico, responsabilidad
+                        social y excelencia académica que caracterizan a la Decana de América.
+                    </p>
+
+
+                    <ul class="feature-list">
+                        <li>
+
+                            <div class="feature-icon"><i class="ph ph-chalkboard-teacher"></i></div>
+
+
+                            <div class="feature-text">
+                                <h4>Plana Docente</h4>
+                                <p>Con formación académica en el área de las ciencias matemáticas y computación.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature-icon"><i class="ph ph-certificate"></i></div>
+                            <div class="feature-text">
+                                <h4>Certificación Oficial</h4>
+                                <p>Certificados y constancias emitidas por el CERSEU de la Facultad de Ciencias
+                                    Matemáticas a nombre de la Universidad Nacional Mayor de San Marcos con valor
+                                    oficial y peso en el mercado.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="feature-icon"><i class="ph ph-users-three"></i></div>
+                            <div class="feature-text">
+                                <h4>Respaldo del Decanato</h4>
+                                <p>Las actividades del CERSEU se desarrollan con el respaldo institucional del
+                                    Decanato de la Facultad de Ciencias Matemáticas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="testimonials-section section-padding bg-surface">
+            <div class="container">
+
+                <div class="section-header text-center">
+                    <div class="section-subtitle">OPINIONES</div>
+                    <h2 class="section-title">Testimonios de Nuestros Estudiantes</h2>
+                    <p class="section-description">
+                        Conoce la experiencia de quienes participaron en nuestros cursos y fortalecieron su formación.
+                    </p>
+                </div>
+
+
+                <div class="testimonials-grid" id="testimonials-container">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="cta-section">
+
+            <div class="cta-bg" 
+            style="background-image: url('assets/images/backgrounds/muro_unmsm.png');">
+            </div>
+
+            <div class="container cta-container">
+
+                <h2 class="cta-title">¿Listo para impulsar tu formación académica?</h2>
+
+
+                <p class="cta-subtitle">Descubre nuestros programas académicos orientados a potenciar tus habilidades y
+                    ampliar tus oportunidades de aprendizaje.</p>
+
+
+                <div class="cta-buttons">
+                    <a href="public/pages/programs.html" class="btn btn-primary btn-lg">
+                        Ver programas
+                    </a>
+
+                    <a href="public/pages/extension.html#calendario" class="btn btn-outline-light btn-lg">
+                        Calendario
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div id="footer-container"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

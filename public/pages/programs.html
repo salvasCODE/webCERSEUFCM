@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas - CERSEU FCM | UNMSM</title>
+    <meta name="description" content="Programas - CERSEU FCM | UNMSM">
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/logo/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+
+<body class="bg-gray-50" data-page="programs">
+
+    <div id="header-container"></div>
+
+    <main class="main-content">
+
+        <section class="page-header"
+            style="background-image: linear-gradient(to right, var(--color-primary-900) 0%, rgba(4, 18, 36, 0.8) 100%), url('../../assets/images/hero/facultad.png');">
+
+            <div class="container">
+
+                <span class="badge">Oferta Académica</span>
+
+                <h1 class="hero-title">Programas de Formación y Capacitación</h1>
+
+                <p class="hero-description">
+                    El Centro de Responsabilidad Social y Extensión Universitaria (CERSEU) de la Facultad de Ciencias
+                    Matemáticas desarrolla programas de formación, cursos y actividades académicas
+                    dirigidas a estudiantes, profesionales y público interesado en fortalecer sus conocimientos.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="section-padding py-12">
+            <div class="container">
+
+                <div class="advanced-filter-bar fade-in-up" style="margin-bottom: var(--sp-12);">
+
+                    <div class="search-input-wrapper">
+                        <i class="ph ph-magnifying-glass"></i>
+                        <input type="text" id="course-search" placeholder="Buscar cursos, talleres..."
+                            class="filter-search-input">
+                    </div>
+
+                    <div class="filter-dropdowns">
+
+                        <select class="filter-select" id="type-filter">
+                            <option value="all">Todos los programas</option>
+                            <option value="capacitacion">Capacitación</option>
+                            <option value="curso">Curso</option>
+                            <option value="taller">Taller</option>
+                            <option value="reforzamiento">Reforzamiento</option>
+                        </select>
+
+                        <select class="filter-select" id="modality-filter">
+                            <option value="all">Todas las modalidades</option>
+                            <option value="virtual">Virtual</option>
+                            <option value="semipresencial">Semipresencial</option>
+                            <option value="presencial">Presencial</option>
+                        </select>
+
+                        <button class="btn btn-primary" id="btn-apply-filters" style="padding: 0.75rem 1.5rem;">
+                            Filtrar
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="programs-grid" id="programs-all-container">
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>
+
